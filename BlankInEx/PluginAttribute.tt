@@ -1,0 +1,39 @@
+<#@ template language="C#" hostspecific="true" #>
+<#@ output extension=".cs" #>
+<#@ parameter name="Author" type="System.String" #>
+<#@ parameter name="Name" type="System.String" #>
+<#@ parameter name="Version" type="System.String" #>
+// ------------------------------------------------------------
+// This C# file was generated from a T4 template file.
+// Edits to this file will be overwritten by subsequent builds.
+// Edit the template file directory.
+// ------------------------------------------------------------
+
+using BepInEx;
+
+namespace BlankInEx
+{
+	[BepInPlugin(GUID, Name, Version)]
+	public sealed partial class Plugin
+	{
+        /// <summary>
+		///     The GUID of this BepInEx plugin
+		/// </summary>
+        private const string GUID = Author + "-" + Name;
+
+        /// <summary>
+		///     The author of this Thunderstore package and BepInEx plugin
+		/// </summary>
+        private const string Author = "<#= Author #>";
+
+        /// <summary>
+		///     The name of this Thunderstore package and BepInEx plugin
+		/// </summary>
+        private const string Name = "<#= Name #>";
+
+        /// <summary>
+		///     The version of this Thunderstore package and BepInEx plugin
+		/// </summary>
+		private const string Version = "<#= Version #>";
+	}
+}
