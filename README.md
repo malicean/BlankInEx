@@ -25,7 +25,7 @@ After the initial setup, you can program like you would normally. Building will 
 
 When you are ready to package for Thunderstore:
 
-- [ ] If you have additional DLL files that need to be copied, edit the `csproj` file and add then to the `ZipThunderstore` task
+- [ ] If you have additional DLL files that need to be copied, edit the `csproj` file and add them to the `ZipThunderstore` task
 - [ ] Replace [the icon](BlankInEx/thunderstore/src/icon.png) with your own (256x256)
 - [ ] Replace this readme file with your own. It is also linked within the Thunderstore package.
 
